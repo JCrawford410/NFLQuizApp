@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_score"
+        android:textColor="#455A64"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/trophyImageView"
+        android:layout_width="330dp"
+        android:layout_height="287dp"
+        android:layout_below="@id/scoreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:src="@drawable/trophy_icon"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trophyImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/try_again"
+        android:textColor="#3949AB" />
+</RelativeLayout>
